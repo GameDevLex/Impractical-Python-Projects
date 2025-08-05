@@ -1,6 +1,5 @@
 import sys, random
 
-
 def funny_name_generator():
     first_names = ("John", "Joey", "David", "Paul", "Nathan", "Ben")
     last_names = ("Rajan", "Tsu", "Kopf", "Paul", "Beer", "O'Connel")
@@ -32,7 +31,42 @@ def pig_latin():
         else:
             pass
 
+def poor_man_bar_chart():
+    # etaoin
+
+    e_list = []
+    t_list = []
+    a_list = []
+    o_list = []
+    i_list = []
+    n_list = []
+
+    input_word = input("Phrase: ")
+
+    for i in input_word:
+        if i == "e":
+            e_list.append(i)
+        elif i == "t":
+            t_list.append(i)
+        elif i == "a":
+            a_list.append(i)
+        elif i == "o":
+            o_list.append(i)
+        elif i == "i":
+            i_list.append(i)
+        elif i == "n":
+            n_list.append(i)
+        else:
+            pass
+
+    print("e_list: " + str(e_list))
+    print("t_list: " + str(t_list))
+    print("a_list: " + str(a_list))
+    print("o_list: " + str(o_list))
+    print("i_list: " + str(i_list))
+    print("n_list: " + str(n_list))
 
 if __name__ == '__main__':
     funny_name_generator()
     pig_latin()
+    poor_man_bar_chart()
